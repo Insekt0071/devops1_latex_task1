@@ -17,9 +17,9 @@ jobs:
                 npm install @cspell/dict-software-terms
                 npm install @cspell/dict-python
             - name: Run cspell
-             uses: streetsidesoftware/cspell-action
-             with: 
+             uses: streetsidesoftware/cspell-action@v2
+             with:
                 files: "*.tex"
                 check_dot_files: false
                 strict: true
-                incremental_file_only: false
+                incremental_files_only: false
